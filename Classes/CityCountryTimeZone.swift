@@ -21,7 +21,8 @@ struct CityCountryTimeZone {
     }
     
     func contains(_ string: String) -> Bool {
-        return city.lowercased().contains(string.lowercased()) || country.lowercased().contains(string.lowercased())
+        return city.lowercased().contains(string.lowercased()) || country.lowercased().contains(string.lowercased()) ||
+            timeZoneName.lowercased().contains(string.lowercased())
     }
     
     func string() -> String {
